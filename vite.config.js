@@ -8,5 +8,8 @@ export default defineConfig({
       name: "DocBootstrap",
       fileName: "main",
     },
+    commonjsOptions: {
+      requireReturnsDefault: true,
+    },
   },
 });
