@@ -11,6 +11,10 @@
     ".": {
       "import": "./dist/main.js",
       "require": "./dist/main.umd.cjs"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "scripts": {
