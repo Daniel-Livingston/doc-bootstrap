@@ -1,7 +1,19 @@
 <script lang="ts">
+	import type { PageServerData } from './$types';
 	import '$lib/main.css';
+	import 'highlight.js/styles/default.css';
+
+	export let data: PageServerData;
+	const { content, toc } = data;
 </script>
 
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="doc">
+	<nav class="doc-toc">
+		<div class="doc-toc-header">Contents</div>
+		{@html toc}
+	</nav>
+
+	<div class="doc-content">
+		{@html content}
+	</div>
+</div>
