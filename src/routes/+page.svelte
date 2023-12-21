@@ -17,3 +17,15 @@
 		{@html content}
 	</div>
 </div>
+
+<style>
+	:global(*),
+	:global(*::before),
+	:global(*::after) {
+		box-sizing: border-box;
+	}
+
+	:global(body) {
+		margin: 0;
+	}
+</style>

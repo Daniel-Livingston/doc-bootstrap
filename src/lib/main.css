@@ -156,8 +156,8 @@
 
 		display: grid;
 		grid-template-columns:
-			auto [toc-start] 16rem [toc-end] 3rem [content-start] min(100%, 48rem)
-			[content-end] 3rem auto;
+			auto [toc-start] 16rem [toc-end] minmax(auto, 2rem) [content-start] min(100%, 48rem)
+			[content-end] minmax(auto, 2rem) auto;
 	}
 
 	.doc-toc {
@@ -170,5 +170,6 @@
 	.doc-content {
 		grid-column: content;
 		padding-block: 3rem;
+		padding-inline: 1rem;
 	}
 }
